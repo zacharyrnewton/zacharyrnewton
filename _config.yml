@@ -1,0 +1,17 @@
+title: Zachary R Newton
+email: zacharyrnewton@gmail.com
+description: I need to write this description
+baseurl: "/new"
+url: "https://zacharyrnewton.com"
+
+#Social
+youtube_url: https://youtube.com/zacharyrnewton
+patreon_url: https://patreon.com/zacharyrnewton
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-feed

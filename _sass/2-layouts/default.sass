@@ -1,0 +1,172 @@
+header
+  position: relative
+  padding: 81px 10px 30px 10px
+  width: 100%
+  max-width: 355px
+  margin: auto
+  h1
+    font-size: 1.5625rem
+    padding: 0 0 1rem 0
+    margin: 0
+    max-width: 325px
+  hr
+    height: 1px
+    background: var(--darkOne)
+    width: 75px
+    display: block
+    margin: 0
+    border: none
+  .heroVideo
+    width: 355px
+    height: 199.69px
+    background: var(--darkOne)
+      image: url('../img/hero-video-thumb.jpg')
+      size: cover
+      position: center center
+      repeat: no-repeat
+    margin: 25px auto 0 auto
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.16)
+@media screen and (min-width: 850px)
+  header
+    max-width: 100%
+    padding: 100px 30px 30px 30px
+    display: flex
+    flex-direction: row-reverse
+    justify-content: center
+    align-items: flex-start
+    box-sizing: border-box
+
+    .heroVideo
+      width: 40vw
+      height: 22.5vw
+      margin: 0 1.75rem 0 0
+@media screen and (min-width: 1000px)
+  header
+    .heroVideo
+      width: 400px
+      height: 225px
+section
+  padding: 30px 10px
+  display: block
+  position: relative
+  @media screen and (min-width: 850px)
+    padding: 60px 20px
+  h3
+    text-align: center
+    font-size: 1.25rem
+  .popularVideoWrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    margin: 20px auto 0 auto
+    height: 309.44px
+    width: 100%
+    max-width: 355px
+    .popularVideo
+      background: var(--darkOne)
+        size: cover
+        position: center center
+        repeat: no-repeat
+      width: 175px
+      height: 98.44px
+      box-shadow: 0 4px 8px rgba(0,0,0, 0.16)
+      &:nth-child(1)
+        background-image: url('../img/popular-videos/p1.jpg')
+      &:nth-child(2)
+        background-image: url('../img/popular-videos/p2.jpg')
+      &:nth-child(3)
+        background-image: url('../img/popular-videos/p3.jpg')
+      &:nth-child(4)
+        background-image: url('../img/popular-videos/p4.jpg')
+      &:nth-child(5)
+        background-image: url('../img/popular-videos/p5.jpg')
+      &:nth-child(6)
+        background-image: url('../img/popular-videos/p6.jpg')
+
+section.aboutSection
+  background: var(--lightTwo)
+  padding: 0 10px
+  margin: 30px 0
+  @media screen and (min-width: 850px)
+    padding: 30px 10px
+    margin: 30px 0
+  .aboutWrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    height: 183px
+    max-width: 355px
+    margin: auto
+    .avatar
+      width: 75px
+      height: 75px
+      background: var(--darkOne)
+        size: cover
+        position: center center
+        repeat: no-repeat
+      border-radius: 100%
+      flex-shrink: 0
+    .zacharyrnewton
+      background-image: url('../img/avatars/zacharyrnewton.jpg')
+    p
+      margin: 0 0 0 10px
+      font-size: 0.875rem
+      font-weight: 400
+      line-height: 1.3125rem
+
+.seriesWrapper
+  width: 100%
+  max-width: 355px
+  margin: auto
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  .seriesCard
+    background: var(--whiteTwo)
+    border-radius: 2px
+    width: 175px
+    height: auto
+    margin: 0 0 10px 0
+    box-shadow: 0 1px 2px rgba(0,0,0, 0.16)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    overflow: hidden
+    .seriesThumb
+      width: 100%
+      height: 98.44px
+      background: var(--darkOne)
+        image: url('../img/series-thumbnails/jekyll.jpg')
+        size: cover
+        position: center center
+        repeat: no-repeat
+      flex-shrink: 0
+    .seriesThumb.two
+        background-image: url('../img/series-thumbnails/googleanalytics.jpg')
+    .seriesThumb.three
+        background-image: url('../img/series-thumbnails/designforum.png')
+    .seriesThumb.four
+        background-image: url('../img/series-thumbnails/designandcode.jpg')
+    .seriesTextWrapper
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 10px 5px
+      h5
+        margin: 0
+        font-size: 0.875rem
+        font-weight: 400
+        line-height: 1.3125rem
+        color: var(--darkOne)
+      small
+        font-size: 0.75rem
+        font-weight: 400
+        line-height: 1rem
+        color: var(--secondaryLight)
+    &:nth-child(3),&:nth-child(4)
+      margin: 0
