@@ -14,7 +14,7 @@
 (function themeSet() {
   var time = new Date().getHours();
   var root = document.querySelector(':root');
-  if (time >= 18 || time <= 6) {
+  if (time >= 20 || time <= 6) {
     root.style.setProperty("--white","#000000");
     root.style.setProperty("--black","#FFFFFF");
     root.style.setProperty("--whiteTwo","#1A1A1F");
@@ -43,4 +43,9 @@
     root.style.setProperty("--patreonOrange","#F96854");
   }
   setInterval(themeSet, 5000)
+})();
+
+(function() {
+  var heroVideo = new URL(document.querySelector('.heroVideo').href).searchParams.get('v');
+  document.querySelector('.heroVideo').innerHTML = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/" + heroVideo + "?rel=0&amp;controls=0&amp;showinfo=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
 })();
