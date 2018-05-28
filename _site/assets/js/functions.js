@@ -14,7 +14,7 @@
 (function themeSet() {
   var time = new Date().getHours();
   var root = document.querySelector(':root');
-  if (time >= 20 || time <= 6) {
+  if (time >= 21 || time <= 6) {
     root.style.setProperty("--white","#000000");
     root.style.setProperty("--black","#FFFFFF");
     root.style.setProperty("--whiteTwo","#1A1A1F");
