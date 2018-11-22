@@ -12,6 +12,46 @@
 <link href="favicon.png" rel="shortcut icon" type="{{ site.baseurl }}image/x-icon"/>
 <link href="zacharyrnewton-apple-icon.png" rel="{{ site.baseurl }}apple-touch-icon"/>
 <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+<!--OpenGraph-->
+<meta property="og:title" content="{{ site.title }}" />
+<meta property="og:description" content="{{ site.description }}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content="{{ site.baseurl }}/assets/img/hero.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ site.url }}" />
+<meta proptery="og:site_name" content="{{ site.title }}" />
+<!--Twitter-->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@{{ site.twitterHandle }}" />
+<meta name="twitter:creator" content="@{{ site.twitterHandle }}" />
+<!--Application ID-->
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@id": "{{ site.url }}",
+		"@type": "Organization",
+		"name": "{{ site.title }}",
+		"url": "{{ site.url }}",
+		"logo": "{{ site.url }}{{ site.baseurl }}/favicon.png",
+		"contactPoint": [
+			{
+				"@type": "ContactPoint",
+				"telephone": "{{ site.phone }}",
+				"contactType": "Inquiry",
+				"areaServed": "US",
+				"availableLanguage": ["EN"]
+			}
+		],
+		"sameAs": [
+			"https://zacharynewton.me/",
+			"https://www.youtube.com/zacharyrnewton/",
+			"https://www.instagram.com/zacharyrnewton/",
+			"https://www.twitter.com/{{ site.twitterHandle }}",
+			"https://www.linkedin.com/in/zacharyrnewton/"
+		]
+	}
+</script>
+
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
