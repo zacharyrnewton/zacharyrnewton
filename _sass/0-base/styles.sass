@@ -1,26 +1,49 @@
 //$font-family: "Helvetica", sans-serif
 $font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
 
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+  \:root
+    transition: all 0.3s ease-in-out
+    --white: #FFFFFF
+    --black: #000000
 
-\:root
-  transition: all 0.3s ease-in-out
-  --white: #FFFFFF
-  --black: #000000
+    --whiteTwo: #FFFFFF
+    --whiteThree: #FFFFFF
 
-  --whiteTwo: #FFFFFF
-  --whiteThree: #FFFFFF
+    --lightOne: #F5F5F7
+    --lightTwo: #E8E8ED
 
-  --lightOne: #F5F5F7
-  --lightTwo: #E8E8ED
+    --darkOne: #0F0F12
+    --darkTwo: #19191F
 
-  --darkOne: #0F0F12
-  --darkTwo: #19191F
+    --secondaryLight: #8A8A99
+    --secondaryDark: #1A1A1F
 
-  --secondaryLight: #8A8A99
-  --secondaryDark: #1A1A1F
+    --youtubeRed: #FF0000
+    --patreonOrange: #F96854
 
-  --youtubeRed: #FF0000
-  --patreonOrange: #F96854
+@media (prefers-color-scheme: dark)
+  \:root
+    transition: all 0.3s ease-in-out
+    --white: #000000
+    --black: #FFFFFF
+
+    --whiteTwo: #1A1A1F
+    --whiteThree: #FFFFFF
+
+    --lightOne: #0F0F12
+    --lightTwo: #19191F
+
+    --darkOne: #F5F5F7
+    --darkTwo: #E8E8ED
+
+    --secondaryLight: #8A8A99
+    --secondaryDark: #1A1A1F
+
+    --youtubeRed: #FF0000
+    --patreonOrange: #F96854
+
+
 
 html
   transition: inherit
