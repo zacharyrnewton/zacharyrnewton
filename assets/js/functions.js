@@ -1,15 +1,15 @@
-(function () {
-  fetch('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCWfGm9LosEAeQVMZsp2HgAw&key=AIzaSyAddkm8aBfH_N3w0teFG3sPokIhLO-T6oo')
-  .then((resp) => resp.json())
-  .then(function(data) {
-    var stats = data.items[0].statistics;
-    var subscriberCount = stats.subscriberCount;
-    document.getElementById('YouTube').innerHTML = subscriberCount + " Subscribers";
-  })
-  .catch(function() {
-    document.getElementById('YouTube').innerHTML = "Subscribe";
-  });
-})();
+// (function () {
+//   fetch('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCWfGm9LosEAeQVMZsp2HgAw&key=AIzaSyAddkm8aBfH_N3w0teFG3sPokIhLO-T6oo')
+//   .then((resp) => resp.json())
+//   .then(function(data) {
+//     var stats = data.items[0].statistics;
+//     var subscriberCount = stats.subscriberCount;
+//     document.getElementById('YouTube').innerHTML = subscriberCount + " Subscribers";
+//   })
+//   .catch(function() {
+//     document.getElementById('YouTube').innerHTML = "Subscribe";
+//   });
+// })();
 
 // (function themeSet() {
 //   var time = new Date().getHours();
